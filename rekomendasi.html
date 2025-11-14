@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Menu Rekomendasi | SmartBite</title>
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;700&display=swap" rel="stylesheet" />
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Baloo 2', cursive;
+    }
+
+    body {
+      background-color: #f6f7fb;
+      color: #333;
+    }
+
+    /* HEADER */
+    header {
+      background-color: #c4edc2;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 12px 50px;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 1.8em;
+      font-weight: bold;
+      color: #2e7d32;
+    }
+
+    .logo img {
+      width: 40px;
+      height: 40px;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 25px;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: #2e7d32;
+      font-size: 1.1em;
+      transition: all 0.3s ease;
+      padding: 6px 12px;
+      border-radius: 8px;
+    }
+
+    nav ul li a:hover {
+      background-color: #2e7d32;
+      color: #fff;
+    }
+
+    /* HERO */
+    .hero {
+      width: 100%;
+      height: 260px;
+      background: url('124.jpg') center/cover no-repeat;
+      border-bottom-left-radius: 25px;
+      border-bottom-right-radius: 25px;
+      position: relative;
+    }
+
+    .hero-overlay {
+      position: absolute;
+      bottom: 20px;
+      left: 30px;
+      font-size: 32px;
+      font-weight: 700;
+      color: #fff;
+      text-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+    }
+
+    /* CONTENT */
+    .container {
+      padding: 30px;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    .card {
+      background: #ffffffdd;
+      padding: 25px;
+      border-radius: 22px;
+      margin-bottom: 40px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+      backdrop-filter: blur(10px);
+      display: flex;
+      gap: 25px;
+      align-items: flex-start;
+    }
+
+    .card img {
+      width: 260px;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 18px;
+    }
+
+    .card-content h2 {
+      margin: 0 0 10px 0;
+      font-size: 24px;
+      font-weight: 700;
+    }
+
+    .tag {
+      display: inline-block;
+      background: #ecebff;
+      color: #564caf;
+      padding: 6px 12px;
+      border-radius: 14px;
+      font-size: 14px;
+      font-weight: 600;
+      margin-bottom: 12px;
+    }
+
+    ul {
+      margin-top: 8px;
+      padding-left: 20px;
+    }
+
+    ul li {
+      margin-bottom: 6px;
+      line-height: 1.5;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #c4edc2;
+      color: #2e7d32;
+      font-weight: 600;
+      margin-top: 40px;
+      border-radius: 20px 20px 0 0;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- NAVBAR -->
+  <header>
+    <div class="logo">
+      <img src="https://cdn-icons-png.flaticon.com/512/706/706195.png" alt="logo" />
+      SmartBite
+    </div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="menu.html">Daftar Menu</a></li>
+        <li><a href="rekomendasi.html">Menu Rekomendasi</a></li>
+        <li><a href="saran.html">Saran</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- HERO -->
+  <div class="hero">
+    <div class="hero-overlay">Menu Rekomendasi SmartBite</div>
+  </div>
+
+  <!-- CONTENT -->
+  <div class="container">
+
+  <div class="container">
+
+    <!-- SAYUR SOP AYAM KAMPUNG -->
+    <div class="card">
+      <img src="1.jpg" alt="Sayur Sop Ayam Kampung" />
+      <div class="card-content">
+        <h2>🍲 Sayur Sop Ayam Kampung</h2>
+
+        <div class="tag">⭐ Kenapa Kami Merekomendasikan Menu Ini</div>
+        <ul>
+          <li>Rendah lemak, terutama jika memakai dada ayam atau tanpa kulit.</li>
+          <li>Kaya nutrisi dari wortel, buncis, kentang, dan seledri.</li>
+          <li>Ringan di pencernaan dan cocok untuk tubuh kurang fit.</li>
+          <li>Tinggi protein untuk pemulihan sel & otot.</li>
+          <li>Hydrating karena kuahnya menjaga cairan tubuh.</li>
+          <li>Cocok dimakan setiap hari tanpa rasa enek.</li>
+        </ul>
+
+        <div class="tag">🥦 Nilai Gizi Unggulan</div>
+        <ul>
+          <li>Protein 18–22 gram per mangkuk.</li>
+          <li>Vitamin A dari wortel untuk mata dan imunitas.</li>
+          <li>Vitamin C dari sayuran.</li>
+          <li>Mineral potassium & magnesium.</li>
+          <li>Kalori 120–160 kcal.</li>
+          <li>Serat cukup untuk pencernaan.</li>
+        </ul>
+
+        <div class="tag">👥 Cocok Untuk Siapa</div>
+        <ul>
+          <li>Orang diet rendah kalori.</li>
+          <li>Pelajar & pekerja.</li>
+          <li>Pencernaan sensitif atau masa pemulihan.</li>
+          <li>Anak-anak hingga lansia.</li>
+          <li>Makan malam ringan.</li>
+        </ul>
+
+        <div class="tag">🕒 Waktu Terbaik Menyantapnya</div>
+        <ul>
+          <li>Pagi untuk sarapan ringan.</li>
+          <li>Siang sebagai makan tidak terlalu berat.</li>
+          <li>Malam tanpa bikin begah.</li>
+          <li>Cuaca dingin atau badan kurang fit.</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- AYAM PANGGANG BUMBU REMPAH -->
+    <div class="card">
+      <img src="21.jpg" alt="Ayam Panggang Bumbu Rempah" />
+      <div class="card-content">
+        <h2>🍗 Ayam Panggang Bumbu Rempah</h2>
+
+        <div class="tag">⭐ Kenapa Kami Merekomendasikan Menu Ini</div>
+        <ul>
+          <li>Rendah minyak karena dipanggang.</li>
+          <li>Bumbu lengkap seperti kunyit, ketumbar, jahe, bawang.</li>
+          <li>Rasanya wangi dan sehat.</li>
+          <li>Protein tinggi tanpa lemak jahat.</li>
+        </ul>
+
+        <div class="tag">🥕 Nilai Gizi Unggulan</div>
+        <ul>
+          <li>Protein 22–28 gram per porsi.</li>
+          <li>Kalori 150–220 kcal.</li>
+          <li>Lemak minimal.</li>
+          <li>Antioksidan dari bumbu rempah.</li>
+          <li>Mineral selenium & fosfor.</li>
+        </ul>
+
+        <div class="tag">👥 Cocok Untuk Siapa</div>
+        <ul>
+          <li>Diet rendah lemak.</li>
+          <li>Pekerja & pelajar.</li>
+          <li>Pecinta makanan berbumbu.</li>
+          <li>Atlet / gym-goers.</li>
+          <li>Anak-anak hingga dewasa.</li>
+        </ul>
+
+        <div class="tag">🕒 Waktu Terbaik Menyantapnya</div>
+        <ul>
+          <li>Makan siang bertenaga.</li>
+          <li>Makan malam clean & ringan.</li>
+          <li>Setelah olahraga.</li>
+          <li>Cuaca dingin atau butuh makanan wangi hangat.</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- UBI UNGU REBUS -->
+    <div class="card">
+      <img src="35.jpg" alt="Ubi Ungu Rebus" />
+      <div class="card-content">
+        <h2>🍠 Ubi Ungu Rebus</h2>
+
+        <div class="tag">⭐ Kenapa Kami Merekomendasikan Menu Ini</div>
+        <ul>
+          <li>Rendah kalori dan sangat mengenyangkan.</li>
+          <li>Tanpa minyak, hanya direbus.</li>
+          <li>Kaya antosianin untuk jantung & kulit.</li>
+          <li>Manis alami sebagai pengganti snack manis.</li>
+          <li>Mudah dimasak & ekonomis.</li>
+        </ul>
+
+        <div class="tag">🥕 Nilai Gizi Unggulan</div>
+        <ul>
+          <li>Serat tinggi.</li>
+          <li>Indeks glikemik rendah.</li>
+          <li>Antosianin antioksidan kuat.</li>
+          <li>Vitamin A & C tinggi.</li>
+          <li>Karbohidrat kompleks.</li>
+        </ul>
+
+        <div class="tag">👥 Cocok Untuk Siapa</div>
+        <ul>
+          <li>Orang diet/defisit kalori.</li>
+          <li>Pelajar & pekerja.</li>
+          <li>Lansia atau anak-anak.</li>
+          <li>Penderita kolesterol tinggi.</li>
+          <li>Yang ingin kurangi gula.</li>
+        </ul>
+
+        <div class="tag">🕒 Waktu Terbaik Menyantapnya</div>
+        <ul>
+          <li>Sarapan.</li>
+          <li>Snack pagi/sore.</li>
+          <li>Sebelum olahraga ringan.</li>
+          <li>Malam hari tanpa kembung.</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- WEDANG JAHE MADU -->
+    <div class="card">
+      <img src="41.jpg" alt="Wedang Jahe Madu" />
+      <div class="card-content">
+        <h2>☕ Wedang Jahe Madu</h2>
+
+        <div class="tag">⭐ Kenapa Kami Merekomendasikan Menu Ini</div>
+        <ul>
+          <li>Efek hangat alami jahe + madu.</li>
+          <li>Anti-inflamasi & antioksidan tinggi.</li>
+          <li>Manis alami tanpa gula tambahan.</li>
+          <li>Cocok saat tubuh pegal atau cuaca dingin.</li>
+        </ul>
+
+        <div class="tag">🌿 Nilai Gizi Unggulan</div>
+        <ul>
+          <li>Gingerol untuk pencernaan & sirkulasi.</li>
+          <li>Antioksidan dari madu.</li>
+          <li>Rendah kalori & bebas lemak.</li>
+          <li>Menghangатkan tubuh & melancarkan metabolisme.</li>
+        </ul>
+
+        <div class="tag">👥 Cocok Untuk Siapa</div>
+        <ul>
+          <li>Sering masuk angin atau cepat lelah.</li>
+          <li>Pekerja/pelajar yang stres.</li>
+          <li>Flu ringan, batuk, tenggorokan kering.</li>
+          <li>Yang ingin minuman manis rendah gula.</li>
+          <li>Wanita saat haid.</li>
+        </ul>
+
+        <div class="tag">🕒 Waktu Terbaik Menyantapnya</div>
+        <ul>
+          <li>Pagi hari.</li>
+          <li>Sore untuk relaksasi.</li>
+          <li>Malam sebelum tidur.</li>
+          <li>Saat hujan atau dingin.</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- AIR KELAPA MUDA -->
+    <div class="card">
+      <img src="52.jpg" alt="Air Kelapa Muda Segar" />
+      <div class="card-content">
+        <h2>🧊 Air Kelapa Muda Segar</h2>
+
+        <div class="tag">⭐ Kenapa Kami Merekomendasikan Menu Ini</div>
+        <ul>
+          <li>Isotonik alami untuk hidrasi cepat.</li>
+          <li>Kaya elektrolit: kalium, magnesium, sodium.</li>
+          <li>Manis alami, rendah kalori.</li>
+          <li>Pengganti minuman tinggi gula.</li>
+        </ul>
+
+        <div class="tag">🥥 Nilai Gizi Unggulan</div>
+        <ul>
+          <li>Kalium tinggi untuk tekanan darah.</li>
+          <li>Elektrolit lengkap.</li>
+          <li>Rendah kalori.</li>
+          <li>Antioksidan.</li>
+          <li>Karbohidrat yang mudah diserap.</li>
+        </ul>
+
+        <div class="tag">👥 Cocok Untuk Siapa</div>
+        <ul>
+          <li>Aktivitas outdoor atau mudah dehidrasi.</li>
+          <li>Pelajar/pekerja.</li>
+          <li>Atlet & olahraga.</li>
+          <li>Ibu hamil (dengan porsi wajar).</li>
+          <li>Demam ringan atau kurang cairan.</li>
+        </ul>
+
+        <div class="tag">🕒 Waktu Terbaik Menyantapnya</div>
+        <ul>
+          <li>Siang saat panas.</li>
+          <li>Setelah olahraga.</li>
+          <li>Saat lelah.</li>
+          <li>Sebelum makan untuk hidrasi.</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- JUS WORTEL APEL -->
+    <div class="card">
+      <img src="62.jpg" alt="Jus Wortel Apel" />
+      <div class="card-content">
+        <h2>🍹 Jus Wortel Apel</h2>
+
+        <div class="tag">⭐ Kenapa Kami Merekomendasikan Menu Ini</div>
+        <ul>
+          <li>Manis segar alami dari apel + nutrisi wortel.</li>
+          <li>Vitamin A & C tinggi.</li>
+          <li>Tanpa gula tambahan.</li>
+          <li>Cocok untuk mulai minum jus sayur.</li>
+        </ul>
+
+        <div class="tag">💪 Nilai Gizi Unggulan</div>
+        <ul>
+          <li>Beta-karoten untuk mata & imunitas.</li>
+          <li>Serat larut dari apel.</li>
+          <li>Vitamin C untuk imун tubuh.</li>
+          <li>Antioksidan quercetin.</li>
+          <li>Kalium untuk tekanan darah stabil.</li>
+        </ul>
+
+        <div class="tag">👥 Cocok Untuk Siapa</div>
+        <ul>
+          <li>Pelajar/pekerja butuh minuman penyemangat.</li>
+          <li>Mereka yang ingin kulit lebih sehat.</li>
+          <li>Anak-anak atau dewasa yang tidak suka sayur.</li>
+          <li>Diet sehat.</li>
+          <li>Sering menatap layar (good for eye fatigue).</li>
+        </ul>
+
+        <div class="tag">🕒 Waktu Terbaik Menyantapnya</div>
+        <ul>
+          <li>Pagi sebelum sarapan.</li>
+          <li>Siang sebagai minuman segar.</li>
+          <li>Sebelum belajar/kerja untuk fokus.</li>
+        </ul>
+      </div>
+    </div>
+
+  </div>
+</body>
+</html>

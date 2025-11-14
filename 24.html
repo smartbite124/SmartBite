@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tahu Goreng Air Fryer Isi Sayur | SmartBite</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600&display=swap" rel="stylesheet">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Baloo 2", cursive;
+    }
+
+    body {
+      background: #f4fff4;
+      color: #2e7d32;
+      padding-bottom: 40px;
+    }
+
+    /* Navbar */
+    header {
+      background-color: #c4edc2;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 50px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 1.8em;
+      font-weight: bold;
+      color: #2e7d32;
+    }
+
+    .logo img {
+      width: 40px;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #2e7d32;
+      margin: 0 12px;
+      font-size: 1.1rem;
+    }
+
+    /* Hero */
+    .hero {
+      height: 45vh;
+      position: relative;
+      background-image: url('24.jpg'); 
+      background-size: cover;
+      background-position: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      text-shadow: 0 2px 8px rgba(0,0,0,0.5);
+    }
+
+    .hero::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: rgba(0,0,0,0.35);
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 2;
+      text-align: center;
+      padding: 0 20px;
+    }
+
+    .hero-content h1 {
+      font-size: 2.7rem;
+      margin-bottom: 8px;
+    }
+
+    /* Content Wrapper */
+    .content-wrap {
+      max-width: 900px;
+      margin: 0 auto;
+      margin-top: 30px;
+      padding: 0 20px;
+    }
+
+    /* Card */
+    .card {
+      background: white;
+      border-radius: 20px;
+      padding: 25px;
+      margin-bottom: 25px;
+      box-shadow: 0 6px 15px rgba(0,0,0,0.10);
+      border: 1px solid #e0f2e0;
+    }
+
+    .card h2 {
+      color: #2e7d32;
+      margin-bottom: 10px;
+      font-size: 1.6rem;
+    }
+
+    .card p,
+    .card li {
+      font-size: 1.1rem;
+      line-height: 1.6;
+    }
+
+    ul {
+      padding-left: 20px;
+      margin-top: 10px;
+    }
+
+    /* Nutrition Table */
+    .nutrition-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 15px;
+      background: linear-gradient(135deg, #e2ffe2aa, #ffffffaa);
+      border-radius: 15px;
+      overflow: hidden;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    }
+
+    .nutrition-table th {
+      background: #b2e6b0;
+      padding: 14px;
+      text-align: left;
+      font-size: 1.2rem;
+      color: #1b5e20;
+    }
+
+    .nutrition-table td {
+      padding: 14px;
+      border-bottom: 1px solid #d9f5d7;
+      font-size: 1.1rem;
+      color: #2e7d32;
+    }
+
+    .nutrition-table tr:last-child td {
+      border-bottom: none;
+    }
+
+    /* Back Button */
+    .back-btn {
+      display: block;
+      width: max-content;
+      margin: 30px auto;
+      background: #2e7d32;
+      color: white;
+      padding: 12px 25px;
+      font-size: 1.1rem;
+      border-radius: 12px;
+      border: none;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .back-btn:hover {
+      background: #1b5e20;
+      transform: scale(1.05);
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="logo">
+    <img src="https://cdn-icons-png.flaticon.com/512/706/706195.png" alt="logo">
+    SmartBite
+  </div>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="menu.html">Menu</a>
+    <a href="rekomendasi.html">Menu Rekomendasi</a>
+    <a href="saran.html">Saran</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <div class="hero-content">
+    <h1>Tahu Goreng Air Fryer Isi Sayur</h1>
+    <p>Renyah di luar, sehat di dalam!</p>
+  </div>
+</section>
+
+<div class="content-wrap">
+
+  <!-- Penjelasan -->
+  <div class="card">
+    <h2>Apa itu Tahu Goreng Air Fryer Isi Sayur?</h2>
+    <p>
+      Tahu goreng air fryer isi sayur adalah olahan tahu yang diberi isian sayuran seperti wortel, kol, dan daun bawang,
+      kemudian dimasak menggunakan air fryer sehingga renyah di luar namun tetap rendah minyak.
+      Teksturnya ringan dan tidak berminyak seperti tahu goreng biasa. 
+      Rasanya gurih, segar, dan kaya gizi dari isian sayurnya. 
+      Cocok sebagai lauk sehat atau camilan protein tinggi.
+    </p>
+  </div>
+
+  <!-- Resep -->
+  <div class="card">
+    <h2>Resep Tahu Goreng Air Fryer Isi Sayur (2–3 porsi)</h2>
+
+    <h3 style="margin-top:10px;">Bahan:</h3>
+    <ul>
+      <li>6–8 buah tahu kulit atau tahu pong</li>
+      <li>1 wortel kecil, parut/cincang halus</li>
+      <li>Segenggam kol, cincang tipis</li>
+      <li>1 batang daun bawang, iris</li>
+      <li>1 siung bawang putih, cincang</li>
+      <li>1 sdt kecap asin</li>
+      <li>Garam, merica, dan sedikit kaldu jamur</li>
+    </ul>
+
+    <h3 style="margin-top:15px;">Bahan pelapis (opsional):</h3>
+    <ul>
+      <li>Larutan tepung (1 sdm tepung + 3 sdm air)</li>
+      <li>Tepung panir / breadcrumbs secukupnya</li>
+    </ul>
+
+    <h3 style="margin-top:15px;">Cara Memasak:</h3>
+    <ul>
+      <li>Lubangi bagian tengah tahu atau belah sedikit sisi tahu untuk membuat ruang isian.</li>
+      <li>Campurkan wortel, kol, daun bawang, bawang putih, kecap asin, garam, dan merica.</li>
+      <li>Isi tahu menggunakan campuran sayur, tekan pelan agar padat.</li>
+      <li>Jika ingin renyah: celupkan tahu ke larutan tepung, lalu gulingkan ke breadcrumbs.</li>
+      <li>Masukkan tahu ke air fryer, semprot/oles sedikit minyak tipis.</li>
+      <li>Masak 150°C selama 10 menit, kemudian 180°C selama 5–7 menit hingga kecokelatan.</li>
+      <li>Tips: jangan isi terlalu penuh agar tahu tidak robek saat dimasak.</li>
+    </ul>
+  </div>
+
+  <!-- Kandungan Gizi -->
+  <div class="card">
+    <h2>Kandungan Gizi (per 1 porsi)</h2>
+
+    <table class="nutrition-table">
+      <tr>
+        <th>Nutrisi</th>
+        <th>Jumlah</th>
+      </tr>
+      <tr>
+        <td>Kalori</td>
+        <td>±140–200 kcal</td>
+      </tr>
+      <tr>
+        <td>Protein</td>
+        <td>±10–14 g</td>
+      </tr>
+      <tr>
+        <td>Lemak</td>
+        <td>±5–7 g (lebih rendah daripada tahu goreng biasa)</td>
+      </tr>
+      <tr>
+        <td>Karbohidrat</td>
+        <td>±10–14 g</td>
+      </tr>
+      <tr>
+        <td>Serat, kalsium, vitamin A</td>
+        <td>Tinggi</td>
+      </tr>
+    </table>
+  </div>
+
+  <!-- Manfaat -->
+  <div class="card">
+    <h2>Manfaat Kesehatan</h2>
+    <ul>
+      <li>Menggunakan air fryer → konsumsi minyak berkurang hingga 80%.</li>
+      <li>Tahu kaya protein nabati → membuat kenyang lebih lama.</li>
+      <li>Isian sayur menambah serat & vitamin.</li>
+      <li>Cocok untuk diet, bekal, atau camilan rendah kalori.</li>
+    </ul>
+  </div>
+
+</div>
+
+<button class="back-btn" onclick="window.location.href='makanankering.html'">← Kembali</button>
+
+</body>
+</html>
+

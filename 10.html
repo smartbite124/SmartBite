@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sup Makaroni Sayur & Ayam Suwir | SmartBite</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600&display=swap" rel="stylesheet">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Baloo 2", cursive;
+    }
+
+    body {
+      background: #f4fff4;
+      color: #2e7d32;
+      padding-bottom: 40px;
+    }
+
+    /* Navbar */
+    header {
+      background-color: #c4edc2;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 50px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 1.8em;
+      font-weight: bold;
+      color: #2e7d32;
+    }
+
+    .logo img {
+      width: 40px;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #2e7d32;
+      margin: 0 12px;
+      font-size: 1.1rem;
+    }
+
+    /* Hero */
+    .hero {
+      height: 45vh;
+      position: relative;
+      background-image: url('10.jpg'); /* DIGANTI SESUAI PERMINTAAN */
+      background-size: cover;
+      background-position: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      text-shadow: 0 2px 8px rgba(0,0,0,0.5);
+    }
+
+    .hero::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: rgba(0,0,0,0.35);
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 2;
+      text-align: center;
+      padding: 0 20px;
+    }
+
+    .hero-content h1 {
+      font-size: 2.7rem;
+      margin-bottom: 8px;
+    }
+
+    /* Content Wrapper */
+    .content-wrap {
+      max-width: 900px;
+      margin: 0 auto;
+      margin-top: 30px;
+      padding: 0 20px;
+    }
+
+    /* Card */
+    .card {
+      background: white;
+      border-radius: 20px;
+      padding: 25px;
+      margin-bottom: 25px;
+      box-shadow: 0 6px 15px rgba(0,0,0,0.10);
+      border: 1px solid #e0f2e0;
+    }
+
+    .card h2 {
+      color: #2e7d32;
+      margin-bottom: 10px;
+      font-size: 1.6rem;
+    }
+
+    .card p,
+    .card li {
+      font-size: 1.1rem;
+      line-height: 1.6;
+    }
+
+    ul {
+      padding-left: 20px;
+      margin-top: 10px;
+    }
+
+    /* Nutrition Table */
+    .nutrition-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 15px;
+      background: linear-gradient(135deg, #e2ffe2aa, #ffffffaa);
+      border-radius: 15px;
+      overflow: hidden;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    }
+
+    .nutrition-table th {
+      background: #b2e6b0;
+      padding: 14px;
+      text-align: left;
+      font-size: 1.2rem;
+      color: #1b5e20;
+    }
+
+    .nutrition-table td {
+      padding: 14px;
+      border-bottom: 1px solid #d9f5d7;
+      font-size: 1.1rem;
+      color: #2e7d32;
+    }
+
+    .nutrition-table tr:last-child td {
+      border-bottom: none;
+    }
+
+    /* Back Button */
+    .back-btn {
+      display: block;
+      width: max-content;
+      margin: 30px auto;
+      background: #2e7d32;
+      color: white;
+      padding: 12px 25px;
+      font-size: 1.1rem;
+      border-radius: 12px;
+      border: none;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .back-btn:hover {
+      background: #1b5e20;
+      transform: scale(1.05);
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="logo">
+    <img src="https://cdn-icons-png.flaticon.com/512/706/706195.png" alt="logo">
+    SmartBite
+  </div>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="menu.html">Menu</a>
+    <a href="rekomendasi.html">Menu Rekomendasi</a>
+    <a href="saran.html">Saran</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <div class="hero-content">
+    <h1>Sup Makaroni Sayur & Ayam Suwir</h1>
+    <p>Ringan, lembut, dan cocok untuk segala usia!</p>
+  </div>
+</section>
+
+<div class="content-wrap">
+
+  <!-- Penjelasan -->
+  <div class="card">
+    <h2>Apa itu Sup Makaroni Sayur & Ayam Suwir?</h2>
+    <p>
+      Sup makaroni sayur dan ayam suwir adalah sup sehat dengan kuah bening yang menggabungkan
+      karbohidrat dari makaroni, protein dari ayam, serta serat dari sayuran seperti wortel dan buncis.
+      Teksturnya lembut dan ringan sehingga cocok untuk sarapan, makan malam, atau saat sedang kurang enak badan.
+      Kuahnya gurih natural tanpa bumbu berlebihan sehingga aman untuk semua usia.
+    </p>
+  </div>
+
+  <!-- Resep -->
+  <div class="card">
+    <h2>Resep Sup Makaroni Sayur & Ayam Suwir (2–3 porsi)</h2>
+
+    <h3 style="margin-top:10px;">Bahan:</h3>
+    <ul>
+      <li>60–80 gram makaroni</li>
+      <li>100 gram dada ayam tanpa lemak (rebus lalu suwir)</li>
+      <li>1 buah wortel, potong dadu/korek api</li>
+      <li>Segenggam buncis atau brokoli (opsional)</li>
+      <li>1 batang daun bawang, iris</li>
+      <li>1 batang seledri, iris</li>
+      <li>800–1000 ml air</li>
+      <li>Garam, merica, kaldu jamur secukupnya</li>
+      <li>Opsional bumbu aromatik: 2 siung bawang putih tumis, 1/2 bawang bombay iris</li>
+    </ul>
+
+    <h3 style="margin-top:15px;">Cara Memasak:</h3>
+    <ul>
+      <li>Rebus air hingga mendidih, masukkan bawang putih tumis dan bawang bombay untuk memberi aroma.</li>
+      <li>Tambahkan wortel dan buncis, masak hingga setengah matang.</li>
+      <li>Masukkan makaroni dan masak hingga empuk.</li>
+      <li>Tambahkan ayam suwir, daun bawang, dan seledri.</li>
+      <li>Bumbui dengan garam, merica, dan sedikit kaldu jamur.</li>
+      <li>Masak sebentar hingga kuah wangi dan semua bahan menyatu.</li>
+      <li>Sajikan hangat.</li>
+    </ul>
+  </div>
+
+  <!-- Kandungan Gizi -->
+  <div class="card">
+    <h2>Kandungan Gizi (perkiraan per 1 porsi)</h2>
+
+    <table class="nutrition-table">
+      <tr>
+        <th>Nutrisi</th>
+        <th>Jumlah</th>
+      </tr>
+      <tr>
+        <td>Kalori</td>
+        <td>250–320 kcal</td>
+      </tr>
+      <tr>
+        <td>Protein</td>
+        <td>16–22 g</td>
+      </tr>
+      <tr>
+        <td>Lemak</td>
+        <td>3–5 g</td>
+      </tr>
+      <tr>
+        <td>Karbohidrat</td>
+        <td>35–45 g</td>
+      </tr>
+      <tr>
+        <td>Serat</td>
+        <td>3–4 g</td>
+      </tr>
+      <tr>
+        <td>Vitamin & Mineral</td>
+        <td>Vit A, Vit B kompleks, zat besi, kalium</td>
+      </tr>
+    </table>
+  </div>
+
+  <!-- Manfaat -->
+  <div class="card">
+    <h2>Manfaat Kesehatan</h2>
+    <ul>
+      <li>Makaroni sebagai karbohidrat kompleks → energi lebih stabil.</li>
+      <li>Ayam tanpa lemak → sumber protein berkualitas tinggi.</li>
+      <li>Sayuran → kaya serat dan vitamin untuk imun & pencernaan.</li>
+      <li>Kuah hangat → membantu hidrasi dan merilekskan tubuh.</li>
+    </ul>
+  </div>
+
+</div>
+
+<button class="back-btn" onclick="window.location.href='makananbasah.html'">← Kembali</button>
+
+</body>
+</html>

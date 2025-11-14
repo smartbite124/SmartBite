@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ayam Panggang Bumbu Rempah | SmartBite</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600&display=swap" rel="stylesheet">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Baloo 2", cursive;
+    }
+
+    body {
+      background: #f4fff4;
+      color: #2e7d32;
+      padding-bottom: 40px;
+    }
+
+    /* Navbar */
+    header {
+      background-color: #c4edc2;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 50px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 1.8em;
+      font-weight: bold;
+      color: #2e7d32;
+    }
+
+    .logo img {
+      width: 40px;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #2e7d32;
+      margin: 0 12px;
+      font-size: 1.1rem;
+    }
+
+    /* Hero */
+    .hero {
+      height: 45vh;
+      position: relative;
+      background-image: url('21.jpg'); /* DIGANTI 21.jpg */
+      background-size: cover;
+      background-position: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      text-shadow: 0 2px 8px rgba(0,0,0,0.5);
+    }
+
+    .hero::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: rgba(0,0,0,0.35);
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 2;
+      text-align: center;
+      padding: 0 20px;
+    }
+
+    .hero-content h1 {
+      font-size: 2.7rem;
+      margin-bottom: 8px;
+    }
+
+    /* Content Wrapper */
+    .content-wrap {
+      max-width: 900px;
+      margin: 0 auto;
+      margin-top: 30px;
+      padding: 0 20px;
+    }
+
+    /* Card */
+    .card {
+      background: white;
+      border-radius: 20px;
+      padding: 25px;
+      margin-bottom: 25px;
+      box-shadow: 0 6px 15px rgba(0,0,0,0.10);
+      border: 1px solid #e0f2e0;
+    }
+
+    .card h2 {
+      color: #2e7d32;
+      margin-bottom: 10px;
+      font-size: 1.6rem;
+    }
+
+    .card p,
+    .card li {
+      font-size: 1.1rem;
+      line-height: 1.6;
+    }
+
+    ul {
+      padding-left: 20px;
+      margin-top: 10px;
+    }
+
+    /* Nutrition Table */
+    .nutrition-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 15px;
+      background: linear-gradient(135deg, #e2ffe2aa, #ffffffaa);
+      border-radius: 15px;
+      overflow: hidden;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    }
+
+    .nutrition-table th {
+      background: #b2e6b0;
+      padding: 14px;
+      text-align: left;
+      font-size: 1.2rem;
+      color: #1b5e20;
+    }
+
+    .nutrition-table td {
+      padding: 14px;
+      border-bottom: 1px solid #d9f5d7;
+      font-size: 1.1rem;
+      color: #2e7d32;
+    }
+
+    .nutrition-table tr:last-child td {
+      border-bottom: none;
+    }
+
+    /* Back Button */
+    .back-btn {
+      display: block;
+      width: max-content;
+      margin: 30px auto;
+      background: #2e7d32;
+      color: white;
+      padding: 12px 25px;
+      font-size: 1.1rem;
+      border-radius: 12px;
+      border: none;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .back-btn:hover {
+      background: #1b5e20;
+      transform: scale(1.05);
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="logo">
+    <img src="https://cdn-icons-png.flaticon.com/512/706/706195.png" alt="logo">
+    SmartBite
+  </div>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="menu.html">Menu</a>
+    <a href="rekomendasi.html">Menu Rekomendasi</a>
+    <a href="saran.html">Saran</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <div class="hero-content">
+    <h1>Ayam Panggang Bumbu Rempah</h1>
+    <p>Gurih, aromatik, dan rendah minyak!</p>
+  </div>
+</section>
+
+<div class="content-wrap">
+
+  <!-- Penjelasan -->
+  <div class="card">
+    <h2>Apa itu Ayam Panggang Bumbu Rempah?</h2>
+    <p>
+      Ayam panggang bumbu rempah adalah hidangan ayam yang dibaluri campuran rempah khas Indonesia 
+      seperti bawang putih, bawang merah, ketumbar, kunyit, dan lada, lalu dipanggang hingga kecokelatan.
+      Proses pemanggangan membuat hidangan ini rendah minyak, lebih sehat dibanding ayam goreng,
+      aromatik, gurih, dan tetap juicy. Cocok sebagai makan siang, bekal, atau menu sehat rendah lemak.
+    </p>
+  </div>
+
+  <!-- Resep -->
+  <div class="card">
+    <h2>Resep Ayam Panggang Bumbu Rempah (2–3 porsi)</h2>
+
+    <h3 style="margin-top:10px;">Bahan:</h3>
+    <ul>
+      <li>300–400 gram dada ayam atau paha tanpa kulit</li>
+      <li>1 sdm air jeruk nipis</li>
+      <li>1 sdm minyak (opsional)</li>
+    </ul>
+
+    <h3 style="margin-top:15px;">Bumbu Halus:</h3>
+    <ul>
+      <li>3 siung bawang putih</li>
+      <li>4 siung bawang merah</li>
+      <li>1 cm kunyit</li>
+      <li>1/2 sdt ketumbar bubuk</li>
+      <li>1/2 sdt lada hitam</li>
+      <li>Garam dan sedikit kaldu jamur</li>
+      <li>2 sdm kecap manis rendah gula (opsional)</li>
+    </ul>
+
+    <h3 style="margin-top:15px;">Cara Memasak:</h3>
+    <ul>
+      <li>Cuci ayam dan lumuri jeruk nipis, diamkan 10 menit lalu bilas.</li>
+      <li>Balur ayam dengan bumbu halus, marinasi 20–30 menit.</li>
+      <li>Panaskan oven / air fryer / teflon.</li>
+      <li>Panggang 20–30 menit, bolak-balik sekali.</li>
+      <li>Oles sedikit minyak atau kecap untuk warna kecokelatan.</li>
+      <li>Sajikan saat ayam sudah golden dan aromatik.</li>
+    </ul>
+  </div>
+
+  <!-- Kandungan Gizi -->
+  <div class="card">
+    <h2>Kandungan Gizi (per 1 porsi)</h2>
+
+    <table class="nutrition-table">
+      <tr>
+        <th>Nutrisi</th>
+        <th>Jumlah</th>
+      </tr>
+      <tr>
+        <td>Kalori</td>
+        <td>180–230 kcal</td>
+      </tr>
+      <tr>
+        <td>Protein</td>
+        <td>28–32 g</td>
+      </tr>
+      <tr>
+        <td>Lemak</td>
+        <td>4–7 g</td>
+      </tr>
+      <tr>
+        <td>Karbohidrat</td>
+        <td>4–6 g</td>
+      </tr>
+      <tr>
+        <td>Vitamin B Kompleks</td>
+        <td>Ada</td>
+      </tr>
+      <tr>
+        <td>Mineral</td>
+        <td>Ada (zat besi & lainnya)</td>
+      </tr>
+    </table>
+  </div>
+
+  <!-- Manfaat -->
+  <div class="card">
+    <h2>Manfaat Kesehatan</h2>
+    <ul>
+      <li>Dipanggang → rendah minyak, baik untuk kolesterol.</li>
+      <li>Kunyit & ketumbar → anti-inflamasi.</li>
+      <li>Protein tinggi → bantu membangun otot & kenyang lebih lama.</li>
+      <li>Cocok untuk meal prep, tetap enak saat dingin.</li>
+    </ul>
+  </div>
+
+</div>
+
+<button class="back-btn" onclick="window.location.href='makanankering.html'">← Kembali</button>
+
+</body>
+</html>

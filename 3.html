@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Opor Tahu Tempe Santan Encer | SmartBite</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600&display=swap" rel="stylesheet">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Baloo 2", cursive;
+    }
+
+    body {
+      background: #f4fff4;
+      color: #2e7d32;
+      padding-bottom: 40px;
+    }
+
+    header {
+      background-color: #c4edc2;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 50px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 1.8em;
+      font-weight: bold;
+      color: #2e7d32;
+    }
+
+    .logo img {
+      width: 40px;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #2e7d32;
+      margin: 0 12px;
+      font-size: 1.1rem;
+    }
+
+    .hero {
+      height: 45vh;
+      position: relative;
+      background-image: url('3.jpg');
+      background-size: cover;
+      background-position: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      text-shadow: 0 2px 8px rgba(0,0,0,0.5);
+    }
+
+    .hero::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: rgba(0,0,0,0.35);
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 2;
+      text-align: center;
+      padding: 0 20px;
+    }
+
+    .hero-content h1 {
+      font-size: 2.7rem;
+      margin-bottom: 8px;
+    }
+
+    .content-wrap {
+      max-width: 900px;
+      margin: 0 auto;
+      margin-top: 30px;
+      padding: 0 20px;
+    }
+
+    .card {
+      background: white;
+      border-radius: 20px;
+      padding: 25px;
+      margin-bottom: 25px;
+      box-shadow: 0 6px 15px rgba(0,0,0,0.10);
+      border: 1px solid #e0f2e0;
+    }
+
+    .card h2 {
+      color: #2e7d32;
+      margin-bottom: 10px;
+      font-size: 1.6rem;
+    }
+
+    .card p,
+    .card li {
+      font-size: 1.1rem;
+      line-height: 1.6;
+    }
+
+    ul {
+      padding-left: 20px;
+      margin-top: 10px;
+    }
+
+    .nutrition-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 15px;
+      background: linear-gradient(135deg, #e2ffe2aa, #ffffffaa);
+      border-radius: 15px;
+      overflow: hidden;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    }
+
+    .nutrition-table th {
+      background: #b2e6b0;
+      padding: 14px;
+      text-align: left;
+      font-size: 1.2rem;
+      color: #1b5e20;
+    }
+
+    .nutrition-table td {
+      padding: 14px;
+      border-bottom: 1px solid #d9f5d7;
+      font-size: 1.1rem;
+      color: #2e7d32;
+    }
+
+    .nutrition-table tr:last-child td {
+      border-bottom: none;
+    }
+
+    .back-btn {
+      display: block;
+      width: max-content;
+      margin: 30px auto;
+      background: #2e7d32;
+      color: white;
+      padding: 12px 25px;
+      font-size: 1.1rem;
+      border-radius: 12px;
+      border: none;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .back-btn:hover {
+      background: #1b5e20;
+      transform: scale(1.05);
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="logo">
+    <img src="https://cdn-icons-png.flaticon.com/512/706/706195.png" alt="logo">
+    SmartBite
+  </div>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="menu.html">Menu</a>
+    <a href="rekomendasi.html">Menu Rekomendasi</a>
+    <a href="saran.html">Saran</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <div class="hero-content">
+    <h1>Opor Tahu Tempe Santan Encer</h1>
+    <p>Gurih, ringan, dan kaya protein nabati!</p>
+  </div>
+</section>
+
+<div class="content-wrap">
+
+  <!-- Penjelasan -->
+  <div class="card">
+    <h2>Apa itu Opor Tahu Tempe Santan Encer?</h2>
+    <p>
+      Opor tahu tempe santan encer adalah versi opor yang lebih ringan dan sehat.
+      Santan dibuat lebih encer sehingga kuah tidak terlalu kental dan rendah lemak.
+      Tahu dan tempe menjadi sumber protein nabati yang baik dan cocok untuk diet sehat
+      serta bagi yang mengurangi daging. Rasanya tetap gurih berkat perpaduan bumbu opor
+      seperti kunyit, lengkuas, serai, dan daun salam.
+    </p>
+  </div>
+
+  <!-- Resep -->
+  <div class="card">
+    <h2>Resep Opor Tahu Tempe Santan Encer (2–3 porsi)</h2>
+
+    <h3 style="margin-top:10px;">Bahan:</h3>
+    <ul>
+      <li>4 potong tahu, potong dadu dan goreng sebentar</li>
+      <li>4 potong tempe ukuran sedang, potong dadu dan goreng sebentar</li>
+      <li>400 ml santan encer</li>
+      <li>2 lembar daun salam</li>
+      <li>2 batang serai, geprek</li>
+      <li>1 ruas lengkuas, geprek</li>
+      <li>1 ruas kunyit, geprek/parut</li>
+    </ul>
+
+    <h3 style="margin-top:15px;">Bumbu Halus:</h3>
+    <ul>
+      <li>3 siung bawang putih</li>
+      <li>5 siung bawang merah</li>
+      <li>Garam, merica, sedikit gula</li>
+      <li>Kaldu jamur (opsional)</li>
+    </ul>
+
+    <h3 style="margin-top:15px;">Cara Memasak:</h3>
+    <ul>
+      <li>Tumis bumbu halus hingga harum.</li>
+      <li>Masukkan daun salam, serai, kunyit, dan lengkuas.</li>
+      <li>Tambahkan santan encer, aduk perlahan.</li>
+      <li>Masukkan tahu dan tempe goreng.</li>
+      <li>Bumbui garam, merica, dan sedikit gula.</li>
+      <li>Masak dengan api kecil hingga bumbu meresap.</li>
+      <li>Sajikan hangat.</li>
+    </ul>
+  </div>
+
+  <!-- Kandungan Gizi -->
+  <div class="card">
+    <h2>Kandungan Gizi (per porsi)</h2>
+
+    <table class="nutrition-table">
+      <tr>
+        <th>Nutrisi</th>
+        <th>Jumlah</th>
+      </tr>
+      <tr>
+        <td>Kalori</td>
+        <td>180–230 kcal</td>
+      </tr>
+      <tr>
+        <td>Protein</td>
+        <td>12–16 g</td>
+      </tr>
+      <tr>
+        <td>Lemak</td>
+        <td>8–12 g</td>
+      </tr>
+      <tr>
+        <td>Karbohidrat</td>
+        <td>10–14 g</td>
+      </tr>
+      <tr>
+        <td>Kalsium</td>
+        <td>80–120 mg</td>
+      </tr>
+      <tr>
+        <td>Serat</td>
+        <td>2–4 g</td>
+      </tr>
+    </table>
+  </div>
+
+  <!-- Manfaat -->
+  <div class="card">
+    <h2>Manfaat Kesehatan</h2>
+    <ul>
+      <li>Protein nabati dari tahu dan tempe → memperbaiki jaringan tubuh.</li>
+      <li>Santan encer → lebih rendah lemak, cocok untuk diet sehat.</li>
+      <li>Tempe mengandung probiotik → baik untuk kesehatan pencernaan.</li>
+      <li>Kalsium dari tahu & tempe → mendukung kekuatan tulang.</li>
+    </ul>
+  </div>
+
+</div>
+
+<button class="back-btn" onclick="window.location.href='makananbasah.html'">← Kembali</button>
+
+</body>
+</html>

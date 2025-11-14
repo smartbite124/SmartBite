@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Side Dish | SmartBite</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600&display=swap" rel="stylesheet" />
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Baloo 2', cursive;
+    }
+
+    body {
+      background-color: #f8fff8;
+      color: #2e7d32;
+    }
+
+    /* Navbar */
+    header {
+      background-color: #c4edc2;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 50px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 1.8em;
+      font-weight: bold;
+      color: #2e7d32;
+    }
+
+    .logo img {
+      width: 40px;
+      height: 40px;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #2e7d32;
+      margin: 0 15px;
+      font-size: 1.1rem;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #145214;
+    }
+
+    /* Hero Section */
+    .hero {
+      position: relative;
+      height: 50vh;
+      background-image: url('123.jpg');
+      background-size: cover;
+      background-position: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #fff;
+      text-shadow: 0 2px 8px rgba(0,0,0,0.4);
+    }
+
+    .hero::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: rgba(0,0,0,0.3);
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 2;
+      text-align: center;
+    }
+
+    .hero-content h1 {
+      font-size: 2.8em;
+      margin-bottom: 10px;
+    }
+
+    .hero-content p {
+      font-size: 1.2em;
+    }
+
+    /* Menu Scroll Section */
+    .menu-section {
+      margin: 40px 0;
+      text-align: center;
+    }
+
+    .menu-section h2 {
+      color: #2e7d32;
+      font-size: 1.8rem;
+      margin-bottom: 20px;
+    }
+
+    .menu-scroll {
+      display: flex;
+      overflow-x: auto;
+      gap: 20px;
+      padding: 20px 40px;
+      scroll-behavior: smooth;
+    }
+
+    .menu-card {
+      flex: 0 0 auto;
+      background-color: #e4f9e4;
+      border-radius: 15px;
+      width: 220px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      transition: transform 0.3s, box-shadow 0.3s;
+      text-decoration: none;
+      color: #2e7d32;
+    }
+
+    .menu-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 16px rgba(0,0,0,0.15);
+    }
+
+    .menu-card img {
+      width: 100%;
+      height: 150px;
+      border-top-left-radius: 15px;
+      border-top-right-radius: 15px;
+      object-fit: cover;
+    }
+
+    .menu-card p {
+      padding: 12px;
+      font-size: 1.05rem;
+      text-align: center;
+    }
+
+    /* Back Button */
+    .back-btn {
+      display: block;
+      margin: 40px auto;
+      padding: 12px 24px;
+      background-color: #2e7d32;
+      color: white;
+      font-size: 1.1rem;
+      border: none;
+      border-radius: 12px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+
+    .back-btn:hover {
+      background-color: #1b5e20;
+      transform: scale(1.05);
+    }
+
+    footer {
+      background-color: #c4edc2;
+      text-align: center;
+      padding: 20px;
+      color: #2e7d32;
+      font-weight: 600;
+      margin-top: 40px;
+    }
+
+    /* Scrollbar */
+    .menu-scroll::-webkit-scrollbar {
+      height: 10px;
+    }
+
+    .menu-scroll::-webkit-scrollbar-thumb {
+      background-color: #a5d6a7;
+      border-radius: 10px;
+    }
+
+    .menu-scroll::-webkit-scrollbar-track {
+      background-color: #e8f5e9;
+    }
+
+    @media (max-width: 768px) {
+      .hero {
+        height: 40vh;
+      }
+      .menu-card {
+        width: 180px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo">
+      <img src="https://cdn-icons-png.flaticon.com/512/706/706195.png" alt="logo" />
+      SmartBite
+    </div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="menu.html">Menu</a>
+      <a href="rekomendasi.html">Menu Rekomendasi</a>
+      <a href="saran.html">Saran</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="hero-content">
+      <h1>🥗 Side Dish Sehat</h1>
+      <p>Pendamping lezat, bergizi, dan cocok untuk hidangan utama!</p>
+    </div>
+  </section>
+
+  <section class="menu-section">
+    <h2>Pilih Menu Favoritmu</h2>
+    <div class="menu-scroll">
+
+      <a href="31.html" class="menu-card">
+  <img src="31.jpg" alt="">
+  <p>Lalapan Sayur Segar + Sambal Tomat Rebus</p>
+</a>
+
+<a href="32.html" class="menu-card">
+  <img src="32.jpg" alt="">
+  <p>Tahu Kukus Isi Sayur</p>
+</a>
+
+<a href="33.html" class="menu-card">
+  <img src="33.jpg" alt="">
+  <p>Salad Buah Yoghurt Plain</p>
+</a>
+
+<a href="34.html" class="menu-card">
+  <img src="34.jpg" alt="">
+  <p>Jagung Manis Rebus</p>
+</a>
+
+<a href="35.html" class="menu-card">
+  <img src="35.jpg" alt="">
+  <p>Ubi Ungu Rebus</p>
+</a>
+
+<a href="36.html" class="menu-card">
+  <img src="36.jpg" alt="">
+  <p>Edamame Kukus</p>
+</a>
+
+<a href="37.html" class="menu-card">
+  <img src="37.jpg" alt="">
+  <p>Tumis Tahu Brokoli (Porsi Kecil)</p>
+</a>
+
+<a href="38.html" class="menu-card">
+  <img src="38.jpg" alt="">
+  <p>Kentang Rebus Tabur Parsley</p>
+</a>
+
+<a href="39.html" class="menu-card">
+  <img src="39.jpg" alt="">
+  <p>Pisang Rebus + Kelapa Parut</p>
+</a>
+
+<a href="40.html" class="menu-card">
+  <img src="40.jpg" alt="">
+  <p>Telur Rebus Setengah Matang</p>
+</a>
+
+
+    </div>
+  </section>
+
+  <button class="back-btn" onclick="window.location.href='menu.html'">← Kembali ke Menu</button>
+
+  <footer>
+    © 2025 SmartBite — Langkah cermat, hidup sehat 🌱 | Kelompok 1 XII-I
+  </footer>
+
+</body>
+</html>

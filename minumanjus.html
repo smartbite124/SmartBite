@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jus Segar | SmartBite</title>
+
+  <!-- Font sama: Baloo 2 -->
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600&display=swap" rel="stylesheet" />
+
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Baloo 2', cursive; }
+
+    body { background-color: #f8fff8; color: #2e7d32; }
+
+    /* Navbar/header (sama persis) */
+    header {
+      background-color: #c4edc2;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 50px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+    .logo { display:flex; align-items:center; gap:10px; font-size:1.8em; font-weight:bold; color:#2e7d32; }
+    .logo img { width:40px; height:40px; }
+    nav a { text-decoration:none; color:#2e7d32; margin:0 15px; font-size:1.1rem; transition:color .3s; }
+    nav a:hover { color:#145214; }
+
+    /* Hero */
+    .hero {
+      position: relative;
+      height: 50vh;
+      background-image: url('https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=1600&q=80');
+      background-size: cover;
+      background-position: center;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      color:#fff;
+      text-shadow:0 2px 8px rgba(0,0,0,0.4);
+    }
+    .hero::after { content:""; position:absolute; inset:0; background:rgba(0,0,0,0.32); }
+    .hero-content { position:relative; z-index:2; text-align:center; }
+    .hero-content h1 { font-size:2.8em; margin-bottom:10px; }
+    .hero-content p { font-size:1.1em; }
+
+    /* Section */
+    .menu-section { margin: 40px 0; text-align:center; }
+    .menu-section h2 { color:#2e7d32; font-size:1.8rem; margin-bottom:20px; }
+
+    /* horizontal scroll cards (like other pages) */
+    .menu-scroll {
+      display:flex;
+      overflow-x:auto;
+      gap:20px;
+      padding:20px 40px;
+      scroll-behavior:smooth;
+    }
+    .menu-card {
+      flex:0 0 auto;
+      background-color:#e4f9e4;
+      border-radius:15px;
+      width:220px;
+      box-shadow:0 4px 10px rgba(0,0,0,0.1);
+      transition:transform .3s, box-shadow .3s;
+      text-decoration:none;
+      color:#2e7d32;
+    }
+    .menu-card:hover { transform:translateY(-5px); box-shadow:0 8px 16px rgba(0,0,0,0.15); }
+    .menu-card img { width:100%; height:150px; border-top-left-radius:15px; border-top-right-radius:15px; object-fit:cover; }
+    .menu-card p { padding:12px; font-size:1.05rem; text-align:center; }
+
+    .back-btn {
+      display:block;
+      margin:40px auto;
+      padding:12px 24px;
+      background-color:#2e7d32;
+      color:white;
+      font-size:1.1rem;
+      border:none;
+      border-radius:12px;
+      cursor:pointer;
+      transition:all .3s ease;
+      text-decoration:none;
+      width:200px;
+      text-align:center;
+    }
+    .back-btn:hover { background-color:#1b5e20; transform:scale(1.03); }
+
+    footer {
+      background-color:#c4edc2;
+      text-align:center;
+      padding:20px;
+      color:#2e7d32;
+      font-weight:600;
+      margin-top:40px;
+    }
+
+    /* scrollbar style */
+    .menu-scroll::-webkit-scrollbar { height:10px; }
+    .menu-scroll::-webkit-scrollbar-thumb { background-color:#a5d6a7; border-radius:10px; }
+    .menu-scroll::-webkit-scrollbar-track { background-color:#e8f5e9; }
+
+    @media (max-width:768px) {
+      .hero { height:40vh; }
+      .menu-card { width:180px; }
+      header { padding:12px 20px; }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo">
+      <img src="https://cdn-icons-png.flaticon.com/512/706/706195.png" alt="logo" />
+      SmartBite
+    </div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="menu.html">Menu</a>
+      <a href="rekomendasi.html">Rekomendasi</a>
+      <a href="saran.html">Saran</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="hero-content">
+      <h1>🍹 Jus Segar</h1>
+      <p>Pilihan jus sehat, alami, dan menyegarkan — cocok untuk semua aktivitasmu.</p>
+    </div>
+  </section>
+
+  <section class="menu-section">
+    <h2>Pilih Jus Favoritmu</h2>
+
+    <div class="menu-scroll">
+
+      <a href="61.html" class="menu-card">
+        <img src="61.jpg" alt="Jus Jambu Merah">
+        <p>Jus Jambu Merah</p>
+      </a>
+
+      <a href="62.html" class="menu-card">
+        <img src="62.jpg" alt="Jus Wortel Apel">
+        <p>Jus Wortel Apel</p>
+      </a>
+
+      <a href="63.html" class="menu-card">
+        <img src="63.jpg" alt="Jus Alpukat Madu">
+        <p>Jus Alpukat Madu</p>
+      </a>
+
+      <a href="64.html" class="menu-card">
+        <img src="64.jpg" alt="Jus Bayam Nanas">
+        <p>Jus Bayam Nanas</p>
+      </a>
+
+      <a href="65.html" class="menu-card">
+        <img src="65.jpg" alt="Jus Tomat Segar">
+        <p>Jus Tomat Segar</p>
+      </a>
+
+      <a href="66.html" class="menu-card">
+        <img src="66.jpg" alt="Jus Pepaya Jeruk">
+        <p>Jus Pepaya Jeruk</p>
+      </a>
+
+      <a href="67.html" class="menu-card">
+        <img src="67.jpg" alt="Jus Mangga Pisang">
+        <p>Jus Mangga Pisang (tanpa gula)</p>
+      </a>
+
+      <a href="68.html" class="menu-card">
+        <img src="68.jpg" alt="Jus Semangka Stroberi">
+        <p>Jus Semangka Stroberi</p>
+      </a>
+
+      <a href="69.html" class="menu-card">
+        <img src="69.jpg" alt="Jus Timun Apel Hijau">
+        <p>Jus Timun Apel Hijau</p>
+      </a>
+
+      <a href="70.html" class="menu-card">
+        <img src="70.jpg" alt="Jus Sawi Apel">
+        <p>Jus Sawi Apel</p>
+      </a>
+
+    </div>
+  </section>
+
+  <a class="back-btn" href="menu.html">← Kembali ke Menu</a>
+
+  <footer>
+    © 2025 SmartBite — Langkah cermat, hidup sehat 🌱 | Kelompok 1 XII-I
+  </footer>
+
+</body>
+</html>

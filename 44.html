@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Susu Kedelai Hangat | SmartBite</title>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600&display=swap" rel="stylesheet">
+
+<style>
+    * { margin: 0; padding: 0; box-sizing: border-box; font-family: "Baloo 2", cursive; }
+    body { background: #f4fff4; color: #2e7d32; padding-bottom: 40px; }
+
+    /* Navbar */
+    header {
+        background-color: #c4edc2;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 15px 50px;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        position: sticky;
+        top: 0;
+        z-index: 10;
+    }
+    .logo {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        font-size: 1.8em;
+        font-weight: bold;
+        color: #2e7d32;
+    }
+    .logo img { width: 40px; }
+    nav a {
+        text-decoration: none;
+        color: #2e7d32;
+        margin: 0 12px;
+        font-size: 1.1rem;
+    }
+
+    /* Hero */
+    .hero {
+        height: 45vh;
+        position: relative;
+        background-image: url('44.jpg');
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        text-shadow: 0 2px 8px rgba(0,0,0,0.5);
+    }
+    .hero::after {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background: rgba(0,0,0,0.35);
+    }
+    .hero-content {
+        position: relative;
+        z-index: 2;
+        text-align: center;
+        padding: 0 20px;
+    }
+    .hero-content h1 {
+        font-size: 2.7rem;
+        margin-bottom: 8px;
+    }
+
+    /* Content Wrapper */
+    .content-wrap {
+        max-width: 900px;
+        margin: 0 auto;
+        margin-top: 30px;
+        padding: 0 20px;
+    }
+
+    /* Card */
+    .card {
+        background: white;
+        border-radius: 20px;
+        padding: 25px;
+        margin-bottom: 25px;
+        box-shadow: 0 6px 15px rgba(0,0,0,0.10);
+        border: 1px solid #e0f2e0;
+    }
+    .card h2 {
+        color: #2e7d32;
+        margin-bottom: 10px;
+        font-size: 1.6rem;
+    }
+    .card p, .card li {
+        font-size: 1.1rem;
+        line-height: 1.6;
+    }
+    ul {
+        padding-left: 20px;
+        margin-top: 10px;
+    }
+
+    /* Nutrition Table */
+    .nutrition-table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 15px;
+        background: linear-gradient(135deg, #e2ffe2aa, #ffffffaa);
+        border-radius: 15px;
+        overflow: hidden;
+        box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    }
+    .nutrition-table th {
+        background: #b2e6b0;
+        padding: 14px;
+        text-align: left;
+        font-size: 1.2rem;
+        color: #1b5e20;
+    }
+    .nutrition-table td {
+        padding: 14px;
+        border-bottom: 1px solid #d9f5d7;
+        font-size: 1.1rem;
+        color: #2e7d32;
+    }
+    .nutrition-table tr:last-child td {
+        border-bottom: none;
+    }
+
+    /* Back Button */
+    .back-btn {
+        display: block;
+        width: max-content;
+        margin: 30px auto;
+        background: #2e7d32;
+        color: white;
+        padding: 12px 25px;
+        font-size: 1.1rem;
+        border-radius: 12px;
+        border: none;
+        cursor: pointer;
+        transition: 0.3s;
+    }
+    .back-btn:hover {
+        background: #1b5e20;
+        transform: scale(1.05);
+    }
+</style>
+</head>
+
+<body>
+
+<header>
+    <div class="logo">
+        <img src="https://cdn-icons-png.flaticon.com/512/706/706195.png" alt="logo">
+        SmartBite
+    </div>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="menu.html">Menu</a>
+        <a href="rekomendasi.html">Menu Rekomendasi</a>
+        <a href="saran.html">Saran</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <div class="hero-content">
+        <h1>Susu Kedelai Hangat</h1>
+        <p>Gurih, hangat, dan kaya nutrisi nabati!</p>
+    </div>
+</section>
+
+<div class="content-wrap">
+
+    <!-- Penjelasan -->
+    <div class="card">
+        <h2>Apa itu Susu Kedelai Hangat?</h2>
+        <p>
+            Susu kedelai hangat adalah minuman nabati yang dibuat dari biji kedelai yang direndam,
+            digiling, direbus, dan disaring hingga menghasilkan cairan lembut berwarna putih kekuningan.
+            Rasanya gurih alami dengan aroma khas kedelai, cocok sebagai pengganti susu sapi bagi
+            yang alergi laktosa atau menjalani pola makan plant-based.
+        </p>
+    </div>
+
+    <!-- Resep -->
+    <div class="card">
+        <h2>Resep Susu Kedelai Hangat (2–3 gelas)</h2>
+
+        <h3 style="margin-top: 10px;">Bahan:</h3>
+        <ul>
+            <li>100 gram kedelai kering</li>
+            <li>700–800 ml air untuk membuat susu</li>
+            <li>1 lembar daun pandan (opsional)</li>
+            <li>1 sdm madu atau gula rendah kalori (opsional)</li>
+        </ul>
+
+        <h3 style="margin-top: 15px;">Cara Membuat:</h3>
+        <ul>
+            <li>Rendam kedelai 8–10 jam hingga mengembang.</li>
+            <li>Buang kulit ari, lalu blender bersama air hingga halus.</li>
+            <li>Saring menggunakan kain bersih untuk memisahkan ampas.</li>
+            <li>Rebus cairan susu kedelai bersama daun pandan hingga mendidih sambil diaduk.</li>
+            <li>Sajikan hangat, tambahkan madu bila ingin sedikit manis.</li>
+        </ul>
+
+        <p style="margin-top: 15px;">
+            <b>Tips:</b> aduk terus saat merebus agar susu tidak pecah dan tetap lembut.
+        </p>
+    </div>
+
+    <!-- Kandungan Gizi -->
+    <div class="card">
+        <h2>Kandungan Gizi (per 1 gelas / 200 ml)</h2>
+        <table class="nutrition-table">
+            <tr><th>Nutrisi</th><th>Jumlah</th></tr>
+            <tr><td>Kalori</td><td>±90–110 kcal</td></tr>
+            <tr><td>Protein</td><td>±7–8 g</td></tr>
+            <tr><td>Lemak</td><td>±4 g (lemak nabati sehat)</td></tr>
+            <tr><td>Karbohidrat</td><td>±8–10 g</td></tr>
+            <tr><td>Kalsium</td><td>Ada (alami dari kedelai)</td></tr>
+            <tr><td>Zat Besi</td><td>Ada</td></tr>
+            <tr><td>Isoflavon</td><tdTinggi (fitonutrien alami)</td></tr>
+        </table>
+    </div>
+
+    <!-- Manfaat -->
+    <div class="card">
+        <h2>Manfaat Kesehatan</h2>
+        <ul>
+            <li>Sumber protein nabati tinggi → baik untuk otot & daya tahan tubuh.</li>
+            <li>Mengandung isoflavon → menjaga keseimbangan hormon & kesehatan kulit.</li>
+            <li>Bebas kolesterol & rendah lemak jenuh → aman untuk jantung.</li>
+            <li>Kaya kalsium & zat besi → baik untuk tulang & peredaran darah.</li>
+            <li>Cocok untuk vegetarian atau penderita intoleransi laktosa.</li>
+        </ul>
+    </div>
+
+</div>
+
+<button class="back-btn" onclick="window.location.href='minumanhangat.html'">← Kembali</button>
+
+</body>
+</html>

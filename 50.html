@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kopi Hitam Murni Tanpa Gula | SmartBite</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600&display=swap" rel="stylesheet">
+
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; font-family: "Baloo 2", cursive; }
+    body { background: #f4fff4; color: #2e7d32; padding-bottom: 40px; }
+
+    header {
+      background-color: #c4edc2; display: flex; justify-content: space-between;
+      align-items: center; padding: 15px 50px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      position: sticky; top: 0; z-index: 10;
+    }
+    .logo { display: flex; align-items: center; gap: 10px; font-size: 1.8em; font-weight: bold; color: #2e7d32; }
+    .logo img { width: 40px; }
+    nav a { text-decoration: none; color: #2e7d32; margin: 0 12px; font-size: 1.1rem; }
+
+    .hero {
+      height: 45vh; position: relative;
+      background-image: url('50.jpg');
+      background-size: cover; background-position: center;
+      display: flex; justify-content: center; align-items: center;
+      color: white; text-shadow: 0 2px 8px rgba(0,0,0,0.5);
+    }
+    .hero::after { content: ""; position: absolute; inset: 0; background: rgba(0,0,0,0.35); }
+    .hero-content { position: relative; z-index: 2; text-align: center; padding: 0 20px; }
+    .hero-content h1 { font-size: 2.7rem; margin-bottom: 8px; }
+
+    .content-wrap { max-width: 900px; margin: 0 auto; margin-top: 30px; padding: 0 20px; }
+    .card {
+      background: white; border-radius: 20px; padding: 25px; margin-bottom: 25px;
+      box-shadow: 0 6px 15px rgba(0,0,0,0.10); border: 1px solid #e0f2e0;
+    }
+    .card h2 { color: #2e7d32; margin-bottom: 10px; font-size: 1.6rem; }
+    .card p, .card li { font-size: 1.1rem; line-height: 1.6; }
+    ul { padding-left: 20px; margin-top: 10px; }
+
+    .nutrition-table {
+      width: 100%; border-collapse: collapse; margin-top: 15px;
+      background: linear-gradient(135deg, #e2ffe2aa, #ffffffaa);
+      border-radius: 15px; overflow: hidden; box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    }
+    .nutrition-table th {
+      background: #b2e6b0; padding: 14px; text-align: left;
+      font-size: 1.2rem; color: #1b5e20;
+    }
+    .nutrition-table td {
+      padding: 14px; border-bottom: 1px solid #d9f5d7;
+      font-size: 1.1rem; color: #2e7d32;
+    }
+    .nutrition-table tr:last-child td { border-bottom: none; }
+
+    .back-btn {
+      display: block; width: max-content; margin: 30px auto;
+      background: #2e7d32; color: white;
+      padding: 12px 25px; font-size: 1.1rem;
+      border-radius: 12px; border: none; cursor: pointer; transition: 0.3s;
+    }
+    .back-btn:hover { background: #1b5e20; transform: scale(1.05); }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <div class="logo">
+    <img src="https://cdn-icons-png.flaticon.com/512/706/706195.png" alt="logo">
+    SmartBite
+  </div>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="menu.html">Menu</a>
+    <a href="rekomendasi.html">Menu Rekomendasi</a>
+    <a href="saran.html">Saran</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <div class="hero-content">
+    <h1>Kopi Hitam Murni Tanpa Gula</h1>
+    <p>Pahit alami, menenangkan, dan kaya energi!</p>
+  </div>
+</section>
+
+<div class="content-wrap">
+
+  <div class="card">
+    <h2>Apa itu Kopi Hitam Murni Tanpa Gula?</h2>
+    <p>
+      Kopi hitam murni tanpa gula adalah minuman hasil seduhan bubuk kopi asli tanpa tambahan pemanis, susu, atau krimer. 
+      Rasanya pahit alami dengan aroma khas yang kuat, memberikan sensasi hangat dan menenangkan bagi pecinta kopi sejati. 
+      Diminum dalam jumlah secukupnya, kopi hitam dapat meningkatkan konsentrasi, membangkitkan semangat, dan memberikan energi tanpa menambah kalori.
+    </p>
+  </div>
+
+  <div class="card">
+    <h2>Resep Kopi Hitam Murni Tanpa Gula (1 gelas / 150–200 ml)</h2>
+
+    <h3 style="margin-top:10px;">Bahan:</h3>
+    <ul>
+      <li>1–2 sdt bubuk kopi murni (robusta atau arabika sesuai selera)</li>
+      <li>150–200 ml air panas (sekitar 90–95°C)</li>
+    </ul>
+
+    <h3 style="margin-top:15px;">Cara Membuat:</h3>
+    <ul>
+      <li>Didihkan air, lalu biarkan sebentar agar suhunya tidak terlalu tinggi.</li>
+      <li>Masukkan bubuk kopi ke dalam cangkir atau gelas saji.</li>
+      <li>Tuang air panas perlahan, aduk sebentar hingga tercampur rata.</li>
+      <li>Diamkan 2–3 menit agar ampas mengendap di dasar gelas.</li>
+      <li>Nikmati kopi hitam hangat tanpa tambahan gula.</li>
+    </ul>
+
+    <p style="margin-top:10px;"><i>Tips: gunakan kopi bubuk segar agar aroma dan rasa lebih nikmat. Jika tidak suka ampas, gunakan penyaring kopi.</i></p>
+  </div>
+
+  <div class="card">
+    <h2>Kandungan Gizi (perkiraan per 1 gelas / 150 ml)</h2>
+
+    <table class="nutrition-table">
+      <tr><th>Nutrisi</th><th>Jumlah</th></tr>
+      <tr><td>Kalori</td><td>±2–5 kcal</td></tr>
+      <tr><td>Lemak</td><td>0 g</td></tr>
+      <tr><td>Protein</td><td>0 g</td></tr>
+      <tr><td>Karbohidrat</td><td>0 g</td></tr>
+      <tr><td>Kafein</td><td>Alami, membantu energi & fokus</td></tr>
+      <tr><td>Antioksidan</td><td>Tinggi, melindungi sel tubuh</td></tr>
+      <tr><td>Mineral</td><td>Magnesium & Kalium</td></tr>
+    </table>
+  </div>
+
+  <div class="card">
+    <h2>Manfaat Kesehatan</h2>
+    <ul>
+      <li>Meningkatkan energi dan fokus berkat kandungan kafein alami.</li>
+      <li>Membantu metabolisme dan pembakaran lemak secara alami.</li>
+      <li>Kaya antioksidan → melindungi sel tubuh dari kerusakan.</li>
+      <li>Dapat menurunkan risiko diabetes tipe 2 bila dikonsumsi tanpa gula secara teratur.</li>
+      <li>Meningkatkan suasana hati dan mengurangi rasa lelah.</li>
+      <li>Disarankan diminum secukupnya (1–2 gelas per hari) agar manfaat optimal tanpa efek samping.</li>
+    </ul>
+  </div>
+
+</div>
+
+<button class="back-btn" onclick="window.location.href='minumanhangat.html'">← Kembali</button>
+
+</body>
+</html>

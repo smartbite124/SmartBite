@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Wedang Sereh dan Kayu Manis | SmartBite</title>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600&display=swap" rel="stylesheet">
+
+<style>
+    * { margin: 0; padding: 0; box-sizing: border-box; font-family: "Baloo 2", cursive; }
+    body { background: #f4fff4; color: #2e7d32; padding-bottom: 40px; }
+
+    /* Navbar */
+    header {
+        background-color: #c4edc2;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 15px 50px;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        position: sticky;
+        top: 0;
+        z-index: 10;
+    }
+    .logo {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        font-size: 1.8em;
+        font-weight: bold;
+        color: #2e7d32;
+    }
+    .logo img { width: 40px; }
+    nav a {
+        text-decoration: none;
+        color: #2e7d32;
+        margin: 0 12px;
+        font-size: 1.1rem;
+    }
+
+    /* Hero */
+    .hero {
+        height: 45vh;
+        position: relative;
+        background-image: url('45.jpg');
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        text-shadow: 0 2px 8px rgba(0,0,0,0.5);
+    }
+    .hero::after {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background: rgba(0,0,0,0.35);
+    }
+    .hero-content {
+        position: relative;
+        z-index: 2;
+        text-align: center;
+        padding: 0 20px;
+    }
+    .hero-content h1 {
+        font-size: 2.7rem;
+        margin-bottom: 8px;
+    }
+
+    /* Content Wrapper */
+    .content-wrap {
+        max-width: 900px;
+        margin: 0 auto;
+        margin-top: 30px;
+        padding: 0 20px;
+    }
+
+    /* Card */
+    .card {
+        background: white;
+        border-radius: 20px;
+        padding: 25px;
+        margin-bottom: 25px;
+        box-shadow: 0 6px 15px rgba(0,0,0,0.10);
+        border: 1px solid #e0f2e0;
+    }
+    .card h2 {
+        color: #2e7d32;
+        margin-bottom: 10px;
+        font-size: 1.6rem;
+    }
+    .card p, .card li {
+        font-size: 1.1rem;
+        line-height: 1.6;
+    }
+    ul {
+        padding-left: 20px;
+        margin-top: 10px;
+    }
+
+    /* Nutrition Table */
+    .nutrition-table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 15px;
+        background: linear-gradient(135deg, #e2ffe2aa, #ffffffaa);
+        border-radius: 15px;
+        overflow: hidden;
+        box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    }
+    .nutrition-table th {
+        background: #b2e6b0;
+        padding: 14px;
+        text-align: left;
+        font-size: 1.2rem;
+        color: #1b5e20;
+    }
+    .nutrition-table td {
+        padding: 14px;
+        border-bottom: 1px solid #d9f5d7;
+        font-size: 1.1rem;
+        color: #2e7d32;
+    }
+    .nutrition-table tr:last-child td {
+        border-bottom: none;
+    }
+
+    /* Back Button */
+    .back-btn {
+        display: block;
+        width: max-content;
+        margin: 30px auto;
+        background: #2e7d32;
+        color: white;
+        padding: 12px 25px;
+        font-size: 1.1rem;
+        border-radius: 12px;
+        border: none;
+        cursor: pointer;
+        transition: 0.3s;
+    }
+    .back-btn:hover {
+        background: #1b5e20;
+        transform: scale(1.05);
+    }
+</style>
+</head>
+
+<body>
+
+<header>
+    <div class="logo">
+        <img src="https://cdn-icons-png.flaticon.com/512/706/706195.png" alt="logo">
+        SmartBite
+    </div>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="menu.html">Menu</a>
+        <a href="rekomendasi.html">Menu Rekomendasi</a>
+        <a href="saran.html">Saran</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <div class="hero-content">
+        <h1>Wedang Sereh dan Kayu Manis</h1>
+        <p>Hangat, harum, dan kaya manfaat!</p>
+    </div>
+</section>
+
+<div class="content-wrap">
+
+    <!-- Penjelasan -->
+    <div class="card">
+        <h2>Apa itu Wedang Sereh dan Kayu Manis?</h2>
+        <p>
+            Wedang sereh dan kayu manis adalah minuman herbal tradisional khas Indonesia yang terbuat dari 
+            rebusan batang sereh dan kayu manis. Aroma sereh yang segar berpadu dengan rasa hangat dan manis alami
+            dari kayu manis, menciptakan sensasi menenangkan dan menyegarkan. Minuman ini cocok diminum hangat untuk
+            menjaga daya tahan tubuh dan meredakan stres.
+        </p>
+    </div>
+
+    <!-- Resep -->
+    <div class="card">
+        <h2>Resep Wedang Sereh dan Kayu Manis (2–3 gelas)</h2>
+
+        <h3 style="margin-top: 10px;">Bahan:</h3>
+        <ul>
+            <li>2 batang sereh (memarkan bagian putihnya)</li>
+            <li>2 ruas kayu manis (sekitar 5–7 cm)</li>
+            <li>2 sdm madu (atau sesuai selera)</li>
+            <li>500 ml air</li>
+            <li>2 lembar daun pandan (opsional)</li>
+            <li>2–3 irisan jahe (opsional)</li>
+        </ul>
+
+        <h3 style="margin-top: 15px;">Cara Memasak:</h3>
+        <ul>
+            <li>Rebus air dalam panci hingga mendidih.</li>
+            <li>Masukkan sereh, kayu manis, daun pandan, dan jahe.</li>
+            <li>Rebus 10–15 menit hingga air keemasan dan aromanya harum.</li>
+            <li>Matikan api, saring ke dalam gelas.</li>
+            <li>Tambahkan madu selagi hangat (jangan saat masih mendidih).</li>
+            <li>Aduk rata dan sajikan.</li>
+        </ul>
+
+        <p style="margin-top: 15px;">
+            <b>Tips:</b> Semakin lama direbus, rasa rempahnya semakin kuat.
+        </p>
+    </div>
+
+    <!-- Kandungan Gizi -->
+    <div class="card">
+        <h2>Kandungan Gizi (per 1 gelas / 250 ml)</h2>
+        <table class="nutrition-table">
+            <tr><th>Nutrisi</th><th>Jumlah</th></tr>
+            <tr><td>Kalori</td><td>±40–60 kcal</td></tr>
+            <tr><td>Karbohidrat</td><td>±10–14 g</td></tr>
+            <tr><td>Lemak</td><td>0 g</td></tr>
+            <tr><td>Protein</td><td>0 g</td></tr>
+            <tr><td>Antioksidan</td><td>Tinggi</td></tr>
+            <tr><td>Vitamin C alami</td><td>Ada</td></tr>
+            <tr><td>Senyawa antibakteri</td><td>Ada</td></tr>
+        </table>
+    </div>
+
+    <!-- Manfaat -->
+    <div class="card">
+        <h2>Manfaat Kesehatan</h2>
+        <ul>
+            <li>Sereh → melancarkan pencernaan dan menenangkan tubuh.</li>
+            <li>Kayu manis → membantu stabilkan gula darah & meningkatkan imun.</li>
+            <li>Madu → antiradang dan memberi energi alami.</li>
+            <li>Kombinasinya membantu menghangatkan tubuh & meredakan tenggorokan.</li>
+        </ul>
+    </div>
+
+</div>
+
+<button class="back-btn" onclick="window.location.href='minumanhangat.html'">← Kembali</button>
+
+</body>
+</html>

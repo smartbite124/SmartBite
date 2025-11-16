@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jus Mangga Pisang | SmartBite</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600&display=swap" rel="stylesheet">
+
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: "Baloo 2", cursive; }
+        body { background: #fff8f4; color: #bf5a00; padding-bottom: 40px; }
+
+        header {
+            background-color: #ffe0c2; display: flex; justify-content: space-between;
+            align-items: center; padding: 15px 50px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            position: sticky; top: 0; z-index: 10;
+        }
+        .logo { display: flex; align-items: center; gap: 10px; font-size: 1.8em; font-weight: bold; color: #bf5a00; }
+        .logo img { width: 40px; }
+        nav a { text-decoration: none; color: #bf5a00; margin: 0 12px; font-size: 1.1rem; }
+
+        .hero {
+            height: 45vh; position: relative;
+            background-image: url('67.jpg'); background-size: cover; background-position: center;
+            display: flex; justify-content: center; align-items: center;
+            color: white; text-shadow: 0 2px 8px rgba(0,0,0,0.5);
+        }
+        .hero::after { content: ""; position: absolute; inset: 0; background: rgba(0,0,0,0.35); }
+        .hero-content { position: relative; z-index: 2; text-align: center; padding: 0 20px; }
+        .hero-content h1 { font-size: 2.7rem; margin-bottom: 8px; }
+
+        .content-wrap { max-width: 900px; margin: 0 auto; margin-top: 30px; padding: 0 20px; }
+        .card {
+            background: white; border-radius: 20px; padding: 25px; margin-bottom: 25px;
+            box-shadow: 0 6px 15px rgba(0,0,0,0.10); border: 1px solid #ffe8d7;
+        }
+        .card h2 { color: #bf5a00; margin-bottom: 10px; font-size: 1.6rem; }
+        .card p, .card li { font-size: 1.1rem; line-height: 1.6; }
+        ul { padding-left: 20px; margin-top: 10px; }
+
+        .nutrition-table {
+            width: 100%; border-collapse: collapse; margin-top: 15px;
+            background: linear-gradient(135deg, #ffe7ccaa, #ffffffaa);
+            border-radius: 15px; overflow: hidden;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+        }
+        .nutrition-table th {
+            background: #ffd4a8; padding: 14px; text-align: left;
+            font-size: 1.2rem; color: #bf5a00;
+        }
+        .nutrition-table td {
+            padding: 14px; border-bottom: 1px solid #ffe1c7;
+            font-size: 1.1rem; color: #bf5a00;
+        }
+        .nutrition-table tr:last-child td { border-bottom: none; }
+
+        .back-btn {
+            display: block; width: max-content; margin: 30px auto;
+            background: #bf5a00; color: white;
+            padding: 12px 25px; font-size: 1.1rem;
+            border-radius: 12px; border: none; cursor: pointer; transition: 0.3s;
+        }
+        .back-btn:hover { background: #8d3f00; transform: scale(1.05); }
+    </style>
+</head>
+
+<body>
+<header>
+    <div class="logo">
+        <img src="https://cdn-icons-png.flaticon.com/512/706/706195.png" alt="logo"> SmartBite
+    </div>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="menu.html">Menu</a>
+        <a href="rekomendasi.html">Menu Rekomendasi</a>
+        <a href="saran.html">Saran</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <div class="hero-content">
+        <h1>Jus Mangga Pisang</h1>
+        <p>Manis alami, creamy, dan penuh energi!</p>
+    </div>
+</section>
+
+<div class="content-wrap">
+
+    <div class="card">
+        <h2>Apa itu Jus Mangga Pisang?</h2>
+        <p>
+            Jus mangga pisang adalah minuman tropis yang lembut, manis alami, dan kaya nutrisi.
+            Perpaduan mangga segar dengan pisang yang creamy menghasilkan rasa legit dan tekstur kental seperti smoothie.
+            Minuman ini cocok untuk sarapan cepat, pengganti camilan sehat, atau sumber energi setelah beraktivitas.
+            Rasanya manis tanpa perlu tambahan gula berlebih.
+        </p>
+    </div>
+
+    <div class="card">
+        <h2>Resep Jus Mangga Pisang (2–3 gelas)</h2>
+
+        <h3 style="margin-top: 10px;">Bahan:</h3>
+        <ul>
+            <li>1 buah mangga matang besar (manis)</li>
+            <li>1 buah pisang matang</li>
+            <li>½ gelas air matang atau susu rendah lemak</li>
+            <li>1 sdm madu (opsional)</li>
+            <li>Es batu secukupnya (opsional)</li>
+        </ul>
+
+        <h3 style="margin-top: 15px;">Cara Membuat:</h3>
+        <ul>
+            <li>Kupas dan potong mangga serta pisang menjadi bagian kecil.</li>
+            <li>Masukkan mangga, pisang, air/susu, dan madu ke dalam blender.</li>
+            <li>Blender hingga halus dan lembut.</li>
+            <li>Tuang ke dalam gelas dan sajikan segera.</li>
+        </ul>
+
+        <p style="margin-top: 15px;"><b>Tips:</b> Gunakan mangga harum manis dan pisang ambon/cavendish untuk rasa paling nikmat.</p>
+    </div>
+
+    <div class="card">
+        <h2>Kandungan Gizi (perkiraan per 1 gelas / ±200 ml)</h2>
+
+        <table class="nutrition-table">
+            <tr><th>Nutrisi</th><th>Jumlah</th></tr>
+            <tr><td>Kalori</td><td>±130–160 kcal</td></tr>
+            <tr><td>Protein</td><td>±2–3 gram</td></tr>
+            <tr><td>Lemak</td><td>±1–2 gram</td></tr>
+            <tr><td>Karbohidrat</td><td>±30–35 gram</td></tr>
+            <tr><td>Vitamin A, C, B6</td><td>Tinggi (dari mangga & pisang)</td></tr>
+            <tr><td>Kalium</td><td>Tinggi</td></tr>
+            <tr><td>Serat</td><td>Alami dari buah</td></tr>
+        </table>
+    </div>
+
+    <div class="card">
+        <h2>Manfaat Kesehatan</h2>
+        <ul>
+            <li>Vitamin A dan C dari mangga membantu menjaga daya tahan tubuh dan kesehatan kulit.</li>
+            <li>Pisang kaya kalium untuk menjaga tekanan darah dan fungsi otot.</li>
+            <li>Memberikan energi cepat alami tanpa tambahan gula berlebih.</li>
+            <li>Tinggi serat sehingga membantu pencernaan dan membuat kenyang lebih lama.</li>
+            <li>Cocok untuk sarapan sehat, minuman pre-workout, atau camilan bergizi.</li>
+        </ul>
+    </div>
+
+</div>
+
+<button class="back-btn" onclick="window.location.href='minumanjus.html'">← Kembali</button>
+
+</body>
+</html>

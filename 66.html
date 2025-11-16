@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jus Pepaya Jeruk | SmartBite</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600&display=swap" rel="stylesheet">
+
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: "Baloo 2", cursive; }
+        body { background: #f4fff4; color: #2e7d32; padding-bottom: 40px; }
+
+        header {
+            background-color: #c4edc2; display: flex; justify-content: space-between;
+            align-items: center; padding: 15px 50px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            position: sticky; top: 0; z-index: 10;
+        }
+        .logo { display: flex; align-items: center; gap: 10px; font-size: 1.8em; font-weight: bold; color: #2e7d32; }
+        .logo img { width: 40px; }
+        nav a { text-decoration: none; color: #2e7d32; margin: 0 12px; font-size: 1.1rem; }
+
+        .hero {
+            height: 45vh; position: relative;
+            background-image: url('66.jpg'); background-size: cover; background-position: center;
+            display: flex; justify-content: center; align-items: center;
+            color: white; text-shadow: 0 2px 8px rgba(0,0,0,0.5);
+        }
+        .hero::after { content: ""; position: absolute; inset: 0; background: rgba(0,0,0,0.35); }
+        .hero-content { position: relative; z-index: 2; text-align: center; padding: 0 20px; }
+        .hero-content h1 { font-size: 2.7rem; margin-bottom: 8px; }
+
+        .content-wrap { max-width: 900px; margin: 0 auto; margin-top: 30px; padding: 0 20px; }
+        .card {
+            background: white; border-radius: 20px; padding: 25px; margin-bottom: 25px;
+            box-shadow: 0 6px 15px rgba(0,0,0,0.10); border: 1px solid #e0f2e0;
+        }
+        .card h2 { color: #2e7d32; margin-bottom: 10px; font-size: 1.6rem; }
+        .card p, .card li { font-size: 1.1rem; line-height: 1.6; }
+        ul { padding-left: 20px; margin-top: 10px; }
+
+        .nutrition-table {
+            width: 100%; border-collapse: collapse; margin-top: 15px;
+            background: linear-gradient(135deg, #e2ffe2aa, #ffffffaa);
+            border-radius: 15px; overflow: hidden;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+        }
+        .nutrition-table th {
+            background: #b2e6b0; padding: 14px; text-align: left;
+            font-size: 1.2rem; color: #1b5e20;
+        }
+        .nutrition-table td {
+            padding: 14px; border-bottom: 1px solid #d9f5d7;
+            font-size: 1.1rem; color: #2e7d32;
+        }
+        .nutrition-table tr:last-child td { border-bottom: none; }
+
+        .back-btn {
+            display: block; width: max-content; margin: 30px auto;
+            background: #2e7d32; color: white;
+            padding: 12px 25px; font-size: 1.1rem;
+            border-radius: 12px; border: none; cursor: pointer; transition: 0.3s;
+        }
+        .back-btn:hover { background: #1b5e20; transform: scale(1.05); }
+    </style>
+</head>
+
+<body>
+<header>
+    <div class="logo">
+        <img src="https://cdn-icons-png.flaticon.com/512/706/706195.png" alt="logo"> SmartBite
+    </div>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="menu.html">Menu</a>
+        <a href="rekomendasi.html">Menu Rekomendasi</a>
+        <a href="saran.html">Saran</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <div class="hero-content">
+        <h1>Jus Pepaya Jeruk</h1>
+        <p>Segar, tropis, kaya vitamin, dan menyehatkan pencernaan!</p>
+    </div>
+</section>
+
+<div class="content-wrap">
+
+    <div class="card">
+        <h2>Apa itu Jus Pepaya Jeruk?</h2>
+        <p>
+            Jus pepaya jeruk adalah perpaduan segar antara manis lembut buah pepaya dan rasa asam menyegarkan dari jeruk.
+            Minuman ini tidak hanya enak, tetapi juga kaya vitamin C, serat, dan enzim alami yang baik untuk pencernaan.
+            Teksturnya kental namun ringan, dengan aroma buah tropis yang menenangkan.
+            Cocok diminum saat sarapan atau sebagai minuman sehat di siang hari.
+        </p>
+    </div>
+
+    <div class="card">
+        <h2>Resep Jus Pepaya Jeruk (2–3 gelas)</h2>
+
+        <h3 style="margin-top: 10px;">Bahan:</h3>
+        <ul>
+            <li>1 potong besar pepaya matang (±200 gram), potong dadu</li>
+            <li>2 buah jeruk manis, peras airnya</li>
+            <li>½ gelas air matang dingin</li>
+            <li>1 sdm madu atau sedikit gula (opsional)</li>
+            <li>Es batu secukupnya (opsional)</li>
+        </ul>
+
+        <h3 style="margin-top: 15px;">Cara Membuat:</h3>
+        <ul>
+            <li>Masukkan potongan pepaya ke dalam blender.</li>
+            <li>Tambahkan air jeruk, air matang, dan madu/gula jika diinginkan.</li>
+            <li>Blender hingga halus dan rata.</li>
+            <li>Sajikan langsung dalam gelas, tambahkan es batu bila ingin lebih segar.</li>
+        </ul>
+
+        <p style="margin-top: 15px;"><b>Tips:</b> Gunakan pepaya yang benar-benar matang agar jus terasa manis alami tanpa perlu tambahan gula.</p>
+    </div>
+
+    <div class="card">
+        <h2>Kandungan Gizi (perkiraan per 1 gelas / ±200 ml)</h2>
+
+        <table class="nutrition-table">
+            <tr><th>Nutrisi</th><th>Jumlah</th></tr>
+            <tr><td>Kalori</td><td>±90–110 kcal</td></tr>
+            <tr><td>Protein</td><td>±1–2 gram</td></tr>
+            <tr><td>Lemak</td><td>±0,5 gram</td></tr>
+            <tr><td>Karbohidrat</td><td>±22–25 gram</td></tr>
+            <tr><td>Vitamin C</td><td>Tinggi</td></tr>
+            <tr><td>Vitamin A & Beta-karoten</td><td>Tinggi</td></tr>
+            <tr><td>Serat</td><td>Tinggi</td></tr>
+        </table>
+    </div>
+
+    <div class="card">
+        <h2>Manfaat Kesehatan</h2>
+        <ul>
+            <li>Mengandung vitamin C tinggi dari jeruk → membantu meningkatkan daya tahan tubuh dan menjaga kesehatan kulit.</li>
+            <li>Pepaya kaya enzim papain → melancarkan pencernaan dan mencegah sembelit.</li>
+            <li>Sumber beta-karoten dan vitamin A → baik untuk kesehatan mata.</li>
+            <li>Kombinasi pepaya dan jeruk membantu detoksifikasi alami tubuh.</li>
+            <li>Cocok untuk menjaga hidrasi, menambah energi, dan membantu kulit tampak cerah alami.</li>
+        </ul>
+    </div>
+
+</div>
+
+<button class="back-btn" onclick="window.location.href='minumanjus.html'">← Kembali</button>
+
+</body>
+</html>
